@@ -288,6 +288,15 @@
       border: 0;
       display:block;
     }
+    /* Demo video specific */
+    .demo-video-embed{
+      min-height: 320px;
+    }
+    .demo-video-embed video{
+      width: 100%;
+      height: 360px;
+      object-fit: contain;
+    }
     .figure-caption{
       margin-top: 12px;
       font-size: 0.92rem;
@@ -440,8 +449,8 @@
     <section id="demo" class="bento-grid">
       <div class="tile col-span-6">
         <h2>MineDojo Demo</h2>
-        <div class="media-embed">
-          <video controls style="width: 100%; height: 100%; object-fit: contain;">
+        <div class="media-embed demo-video-embed">
+          <video controls preload="metadata">
             <source src="assets/minejodo.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -452,8 +461,8 @@
       </div>
       <div class="tile col-span-6">
         <h2>Behavior Demo</h2>
-        <div class="media-embed">
-          <video controls style="width: 100%; height: 100%; object-fit: contain;">
+        <div class="media-embed demo-video-embed">
+          <video controls preload="metadata">
             <source src="assets/behavor.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
