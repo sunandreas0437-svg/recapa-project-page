@@ -401,9 +401,6 @@
           <a href="https://github.com/SnSnLi/ReCAPA" target="_blank" class="nav-link">Method</a>
           <a href="#results" class="nav-link">Results</a>
           <a href="#bibtex" class="nav-link">BibTeX</a>
-          <div class="nav-divider"></div>
-          <a href="https://iclr.cc/virtual/2026/poster/10009066" target="_blank" class="nav-link">arXiv</a>
-          <a href="https://github.com/SnSnLi/ReCAPA" target="_blank" class="nav-link">Code</a>
         </div>
       </div>
     </nav>
@@ -421,9 +418,7 @@
 
         <div class="links-row" style="justify-content: center;">
           <a href="https://iclr.cc/virtual/2026/poster/10009066" class="btn-link">📄 Paper</a>
-          <a href="https://github.com/SnSnLi/ReCAPA" class="btn-link">💻 Code</a>
-          <a href="https://github.com/SnSnLi/ReCAPA" class="btn-link">📦 Model</a>
-          <a href="#demo" class="btn-link">🎮 Demo</a>
+          <a href="#" class="btn-link">💻 Code</a>
         </div>
       </div>
 
@@ -441,7 +436,7 @@
 
     <!-- Section 1.5: Demo Video -->
     <section id="demo" class="bento-grid">
-      <div class="tile col-span-12">
+      <div class="tile col-span-6">
         <h2>MineDojo Demo</h2>
         <div class="media-embed">
           <video controls style="width: 100%; height: 100%; object-fit: contain;">
@@ -451,6 +446,18 @@
         </div>
         <div class="figure-caption">
           Demo: ReCAPA performance on MineDojo benchmark tasks.
+        </div>
+      </div>
+      <div class="tile col-span-6">
+        <h2>Behavior Demo</h2>
+        <div class="media-embed">
+          <video controls style="width: 100%; height: 100%; object-fit: contain;">
+            <source src="assets/behavor.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="figure-caption">
+          Demo: ReCAPA performance on Behavior benchmark tasks.
         </div>
       </div>
     </section>
@@ -479,15 +486,6 @@
 
     <!-- Section 4: Results -->
     <section id="results" class="bento-grid">
-      <div class="tile col-span-6">
-        <h3>Module A: Predictor</h3>
-        <p>Estimates the probability of failure propagation using hierarchical predictive representations.</p>
-      </div>
-      <div class="tile col-span-6">
-        <h3>Module C: Verifier</h3>
-        <p>Quantifies recovery and stability using diagnostic metrics and constraint checks.</p>
-      </div>
-
       <div class="tile col-span-6">
         <h2>MAP-THOR Results</h2>
         <p style="font-size: 0.88rem; margin-bottom: 8px; line-height: 1.4;">Performance on MAP-THOR across models and metrics. MAP-THOR assessed via Success Rate (SR), Transport Rate (TR), Coverage, and Balance; Coverage measures successful interactions, while Balance captures the evenness of contributions to subtasks.</p>
