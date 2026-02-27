@@ -223,13 +223,24 @@
     .hero-title{
       font-size: 3.05rem;
       line-height: 1.08;
-      margin-bottom: var(--space-sm);
+      margin-bottom: var(--space-xs);
       background: linear-gradient(90deg,
         rgba(124,92,255,1) 0%,
         rgba(0,212,255,1) 45%,
         rgba(34,197,94,0.95) 100%);
       -webkit-background-clip:text;
       -webkit-text-fill-color: transparent;
+    }
+    .hero-conference{
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: 650;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--space-md);
+      background: linear-gradient(90deg, rgba(124,92,255,1), rgba(0,212,255,0.95));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
     }
     .hero-authors{
       font-size: 1.12rem;
@@ -424,6 +435,7 @@
       <!-- (3) Title/authors/affiliations occupy full row; remove right-side extras -->
       <div class="tile col-span-12" style="text-align: center;">
         <h1 class="hero-title">ReCAPA: Hierarchical Predictive Correction to Mitigate Cascading Failures</h1>
+        <div class="hero-conference">ICLR 2026</div>
         <p class="hero-authors">Xiyin Zeng*, Yuyu Sun*, Haoyang Li*, Shouqiang Liu, Hao Wang†</p>
         <p class="hero-affiliations">The Hong Kong University of Science and Technology (Guangzhou); South China Normal University</p>
 
@@ -456,7 +468,7 @@
           </video>
         </div>
         <div class="figure-caption">
-          Demo: ReCAPA performance on MineDojo tasks.
+          Demo: ReCAPA performance on MineDojo benchmark tasks.
         </div>
       </div>
       <div class="tile col-span-6">
